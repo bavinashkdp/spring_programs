@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+		<beans>
+		<bean id="e1" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml.Engine" >
+		<property name="modelYear" value="2015">
+		</property>
+		</bean>
+		<bean id="c1" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml.Car" >
+		<property name="carName" value="audi"></property>
+		<property name="engine" ref="e1"></property>
+		</bean>
+		
+		</beans>
