@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+				<beans>
+				<bean id="h1" class="com.jspiders.Spring_Demo0.HellowWorld"  scope="prototype"></bean>
+				<bean id="h2" class="com.jspiders.Spring_Demo0.HellowWorld"  ></bean>
+				<bean id="l1" class="com.jspiders.Spring_Demo0.Laptop"  scope="prototype"></bean>
+				<bean id="l2" class="com.jspiders.Spring_Demo0.Laptop"  ></bean>
+				
+				</beans>
