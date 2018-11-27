@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	<beans>
+	<bean id="dao" class="com.jspiders.Spring_Demo1BeanLifeCycle.Dao_Class" >
+	<property name="derver_class" value="com.mysql.jdbc.Driver" >
+	</property>
+	<property name="url" value="jdbc:mysql://localhost:3306">
+	</property>
+	<property name="userName" value="root">
+	</property>
+	<property name="password" value="avid">
+	</property>
+	</bean>     
+ 
+     
+</beans> 

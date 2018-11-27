@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<!-- to activate @autowired annotation we have to create bean object for AutowiredAnnotationBeanPostProcessor -->
+			<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+			<bean id="e1" class="com.jspiders.Spring_Demo1AutoWiringByUsingXmlAnnotation.Engine">
+			<property name="modelYear" value="2016"></property>
+			</bean>
+			<bean id="e2" class="com.jspiders.Spring_Demo1AutoWiringByUsingXmlAnnotation.Engine" >
+			<property name="modelYear" value="2008"></property>
+			</bean>
+			<bean id="c1" class="com.jspiders.Spring_Demo1AutoWiringByUsingXmlAnnotation.Car">
+			
+			</bean>
+			</beans>

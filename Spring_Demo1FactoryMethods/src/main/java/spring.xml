@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- by default spring can create object by using private constructor -->
+     <bean id="t" class="com.jspiders.Spring_Demo1FactoryMethods.Test"/>
+    <!-- singl tone object -->
+    
+     <bean id="b" class="com.jspiders.Spring_Demo1FactoryMethods.BookMyshow"  factory-method="getInstance">
+     </bean>
+    
+     <!-- we will get bean creatoion exception -->
+    <!--  <bean id="c" class="java.util.Calendar"></bean> -->
+    
+    <bean id="c"  class="java.util.Calendar" factory-method="getInstance">
+    
+    </bean>
+     
+  
+</beans>   

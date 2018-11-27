@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<!-- mannual autowiring approach -->
+			
+	<!-- <beans>
+	<bean id="ea" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Employee_Adress">
+	<property name="location" value="bangalore"></property>
+	</bean>
+	<bean id="e" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Employee">
+	<property name="empName" value="kaushal"></property>
+	<property name="employee_Adress" ref="ea"></property>
+	</bean>
+	<bean id="c" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Company">
+	<property name="companyName" value="capgemini">
+	</property>
+	<property name="employee" ref="e"></property>
+	</bean>
+	</beans>
+	 -->
+	 
+	 <!-- byType autowiring approach -->
+	 <!--  
+	 <beans>
+	<bean id="ea" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Employee_Adress" >
+	<property name="location" value="bangalore"></property>
+	</bean>
+	<bean id="e" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Employee" autowire="byType">
+	<property name="empName" value="kaushal"></property>
+	</bean>
+	<bean id="c" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Company" autowire="byType">
+	<property name="companyName" value="capgemini">
+	</property>
+	</bean>
+	</beans>
+	  -->
+	 <!-- byType autowiring approach to avoid the repeated code autowire attribute -->
+	 
+	<beans default-autowire="byType">
+	<bean id="ea" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Employee_Adress" >
+	<property name="location" value="bangalore"></property>
+	</bean>
+	<bean id="e" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Employee" >
+	<property name="empName" value="kaushal"></property>
+	</bean>
+	<bean id="c" class="com.jspiders.Spring_Demo1AutoWiringByUsingXml1.Company" >
+	<property name="companyName" value="capgemini">
+	</property>
+	</bean>
+	</beans>
+	 
+	 
+	 
+	 
+	 
+	 

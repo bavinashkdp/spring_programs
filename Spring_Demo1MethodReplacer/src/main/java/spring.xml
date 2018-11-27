@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	<beans>
+	<bean id="b1" class="com.jspiders.Spring_Demo1MethodReplacer.Bank">
+	</bean>
+	<bean id="nc" class="com.jspiders.Spring_Demo1MethodReplacer.NewCalculateInterest">
+	
+	</bean>
+	
+	<bean id="b2" class="com.jspiders.Spring_Demo1MethodReplacer.Bank">
+	<replaced-method name="calculateInterest" replacer="nc"></replaced-method>
+	</bean>
+	</beans>

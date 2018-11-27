@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<bean id="t" class="com.jspiders.Spring_Demo1SetterInjuctionForCollectionTypes.Test">
+			<!-- by default arraylist instance will be used -->
+			<property name="fruits">
+			<list>
+			<value>apple</value>
+			<value>mango</value>
+			<value>banana</value>
+			</list>
+			</property>
+			<!-- by default linked hashset instance will be used -->
+			<property name="cricketers">
+			<set>
+			<value>sachin</value>
+			<value>yuvaraj</value>
+			<value>dohni</value>
+			<value>sachin</value>
+			</set>
+			</property>
+			<!-- by default linked hashmap instance will be used -->
+			<property name="countriesAndCapitals">
+			<map>
+			<entry key="india" value="dehli"></entry>
+			<entry key="pakistan" value="islamabad"></entry>
+			<entry key="england" value="london"></entry>
+			</map>			
+			</property>
+			
+			</bean>
+			
+			</beans>
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<!-- normal bean object configuration -->
+<!-- <beans>
+<bean id="dao1" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class1"
+ init-method="myInit" destroy-method="myDestroy">
+</bean>
+<bean id="dao2" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class2" 
+init-method="myInit" destroy-method="myDestroy">
+</bean>
+<bean id="dao3" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class3" 
+init-method="myInit" destroy-method="myDestroy">
+</bean>
+</beans>
+
+ -->
+
+<!-- normal bean object configuration  configure init and destroy methods-->
+
+<!-- 
+<beans>
+<bean id="dao1" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class1"
+ init-method="myInit" destroy-method="myDestroy">
+</bean>
+<bean id="dao2" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class2" 
+init-method="myInit" destroy-method="myDestroy">
+</bean>
+<bean id="dao3" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class3"
+ init-method="myInit" destroy-method="myDestroy">
+</bean>
+</beans>
+
+ -->
+ 
+ 		<!-- normal bean object life cycle  
+ 		configure init and destroy methods reduce the repeated code-->
+ 		
+<beans default-init-method="myInit"
+		default-destroy-method="myDestroy">
+<bean id="dao1" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class1">
+</bean>
+<bean id="dao2" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class2" >
+</bean>
+<bean id="dao3" class="com.jspiders.Spring_Demo1BeanLifeCycleXmlBasedApproach1.Dao_Class3">
+</bean>
+</beans>
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

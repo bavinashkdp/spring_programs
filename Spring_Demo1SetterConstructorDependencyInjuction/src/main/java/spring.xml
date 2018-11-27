@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<bean id="e1" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Engine">
+			<property name="modelYear" value="2018">
+			</property>
+			<constructor-arg value="2017" index="0">
+			</constructor-arg>
+			</bean>
+				<bean id="e2" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Engine">
+			<property name="modelYear" value="2013">
+			</property>
+			<constructor-arg value="2002" index="0">
+			</constructor-arg>
+			</bean>
+			<bean id="c1" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Car">
+			
+			<property name="carName" value="renault">
+			</property>
+			<property name="engine" ref="e1">
+			</property>
+			
+			<constructor-arg value="skoda" index="0">
+			</constructor-arg>
+			<constructor-arg value="e2" index="1">
+			</constructor-arg>
+			
+			</bean>
+			
+			
+			
+			</beans>

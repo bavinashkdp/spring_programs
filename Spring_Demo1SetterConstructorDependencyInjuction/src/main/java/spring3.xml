@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="p3" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.PanCard" 
+	p:panId="333" p:location="pune" 
+	c:panId="555" c:location="chennai">
+	</bean>  
+	<bean id="p4" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.PanCard"
+	p:panId="2323" p:location="haryana"
+	c:panId="9988" c:location="panjab">
+	</bean>   
+     <bean id="pr1" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Person" 
+     p:phoneNum="67679" p:name="siri" p:panCard-ref="p3"
+     c:phoneNum="88990" c:name="charan" c:panCard-ref="p4">
+     </bean>
+</beans>    

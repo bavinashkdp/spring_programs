@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ 		
+ 		<!-- if dependency-check="none" -->
+ <!-- 
+ 		<beans>
+ 		<bean id="e" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Engine">
+ 		<property name="modelYear" value="2010"></property>
+ 		</bean>
+ 		<bean id="c" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Car" dependency-check="none">
+ 		
+ 		</bean>
+ 		 
+ 		 
+ 		 
+ 		 
+ 		</beans>
+ 		 -->
+ 		 
+ 		 <!-- if dependency-check="simple" -->
+ 		 
+ 		<!--  
+ 		 	<beans>
+ 		<bean id="e" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Engine">
+ 		<property name="modelYear" value="2015"></property>
+ 		</bean>
+ 		<bean id="c" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Car" dependency-check="simple">
+ 		<property name="carName" value="Audi"></property>
+ 		</bean>
+ 		 
+ 		</beans> 
+ 		
+ 		-->
+ 		
+ 		
+ 		
+ 		 <!-- if dependency-check="objects" -->
+ 		 
+ 	<!-- 	 
+ 		 	<beans>
+ 		<bean id="e" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Engine">
+ 		<property name="modelYear" value="2015"></property>
+ 		</bean>
+ 		<bean id="c" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Car" dependency-check="objects">
+ 		<property name="engine" ref="e"></property>
+ 		</bean>
+ 		</beans> 
+
+ 	-->
+ 			 <!-- if dependency-check="all" -->
+ 		 
+ 		 
+ 		 	<beans>
+ 		<bean id="e" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Engine">
+ 		<property name="modelYear" value="2015"></property>
+ 		</bean>
+ 		<bean id="c" class="com.jspiders.Spring_Demo1SetterInjuctionDependencyCheckDemo.Car" dependency-check="all">
+ 		<property name="carName" value="Toyoto"></property>
+ 		<property name="engine" ref="e"></property>
+ 		</bean>
+ 		</beans> 
+
+ 	
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		

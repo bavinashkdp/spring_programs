@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<!-- lookup-method  Dependency injuction for interface  Car -->
+<bean id="e1" class="com.jspiders.Spring_Demo1LookUpMethodDependencyInjuction.Engine">
+<property name="engineName" value="SwiftEngine"></property>
+</bean>
+<bean id="c" class="com.jspiders.Spring_Demo1LookUpMethodDependencyInjuction.Car">
+<lookup-method name="getEngine" bean="e1"/>
+</bean>
+
+<!-- lookup-method  Dependency injuction for abstract class  Buss -->
+	<bean id="e2" class="com.jspiders.Spring_Demo1LookUpMethodDependencyInjuction.Engine">
+	<property name="engineName" value="ceat-Buss-engine"></property>
+	</bean>
+	<bean id="b" class="com.jspiders.Spring_Demo1LookUpMethodDependencyInjuction.Buss">
+	<lookup-method  name="getBusEngine" bean="e2"/>
+	</bean>
+<!-- lookup-method  Dependency injuction for concrete class overriding method for (Truck)   -->
+	<bean id="e3" class="com.jspiders.Spring_Demo1LookUpMethodDependencyInjuction.Engine" >
+	<property name="engineName" value="honda_truck_engine"></property>
+	</bean>
+	<bean  id="t" class="com.jspiders.Spring_Demo1LookUpMethodDependencyInjuction.Truck">
+	<lookup-method name="getTruckEngine" bean="e3"/>
+	
+	</bean>
+
+
+</beans>

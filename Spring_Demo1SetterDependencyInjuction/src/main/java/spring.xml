@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			<beans>
+			<bean id="e" class="com.jspiders.Spring_Demo1SetterDependencyInjuction.Engine">
+			<property name="modelYear" value="2018"></property>
+			</bean>
+			<bean id="c" class="com.jspiders.Spring_Demo1SetterDependencyInjuction.Car">
+			<property name="name" value="audi"></property>
+			<property name="engine" ref="e"></property>
+			</bean>
+			
+			
+			</beans>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:c="http://www.springframework.org/schema/c"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="e3" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Engine">
+<constructor-arg value="2001" index="0"></constructor-arg>
+<property name="modelYear" value="2004"></property>
+</bean>
+<bean id="e4" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Engine">
+<constructor-arg value="2006" index="0"></constructor-arg>
+<property name="modelYear" value="2012"></property>
+</bean>
+
+<bean id="c2" class="com.jspiders.Spring_Demo1SetterConstructorDependencyInjuction.Car" >
+<constructor-arg value="audi" index="0"></constructor-arg>
+<constructor-arg ref="e3" index="1"></constructor-arg>
+<property name="carName" value="maruthi_suziki"></property>
+<property name="engine" ref="e4"></property>
+</bean>
+
+
+</beans>

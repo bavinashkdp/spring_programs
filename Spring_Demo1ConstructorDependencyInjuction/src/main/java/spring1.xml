@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="v1" class="com.jspiders.Spring_Demo1ConstructorDependencyInjuction.VoterCard" c:adress="dehli">
+   </bean>
+   <bean id="p1" class="com.jspiders.Spring_Demo1ConstructorDependencyInjuction.Person" c:name="anil" c:voterCard-ref="v1" >
+   </bean>
+   
+    </beans>
