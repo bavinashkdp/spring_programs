@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	<beans>
+	<bean id="b3" class="com.jspiders.Spring_Demo1.Book" ></bean>
+	<bean id="b4" class="com.jspiders.Spring_Demo1.Book"  scope="prototype"></bean>
+	
+	
+	</beans>
